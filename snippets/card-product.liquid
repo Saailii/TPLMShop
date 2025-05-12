@@ -28,6 +28,25 @@
   border-radius: 10px;
 }
 
+
+.product_metafields__container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-block: 1rem;
+  }
+
+.product_metafields {
+  width: fit-content;
+  padding-inline: 1rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.5rem;
+
+
+}
+
 {% endstyle %}
 
 {%- unless skip_styles -%}
@@ -52,6 +71,7 @@
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
   <div class="card__information">
+    
           <h3
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -67,6 +87,31 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+          <div class="product_metafields__container">
+            
+            {% if card_product.metafields.custom.puissance_moteur  %}
+            <div class="product_metafields">
+              {{ card_product.metafields.custom.puissance_moteur }}W
+              </div>
+          {% endif %}
+          {% if card_product.metafields.custom.suspension_arri_re  %}
+           <div class="product_metafields">
+              <span>Suspension arrière</span>
+            </div>
+          {% endif %}
+          {% if card_product.metafields.custom.suspension_avant  %}
+           <div class="product_metafields">
+              <span>Suspension avant</span>
+            </div>
+            <div class="product_metafields">
+              <span>Suspension avant</span>
+            </div>
+            <div class="product_metafields">
+              <span>Suspension avant</span>
+            </div>
+          {% endif %}
+            
+      </div>
           <div class="card-information">
     <div
       class="
