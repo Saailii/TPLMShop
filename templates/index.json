@@ -62,7 +62,7 @@
       "settings": {
         "collection": "velo-electrique",
         "products_to_show": 4,
-        "title": "Vélos électrique",
+        "title": "",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -169,7 +169,7 @@
       "settings": {
         "collection": "trottinette-electrique",
         "products_to_show": 4,
-        "title": "Nos trottinettes électriques",
+        "title": "",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
