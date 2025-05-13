@@ -1,15 +1,38 @@
 .caracteristique__main {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  
+  grid-template-columns: repeat(4, 1fr);
+  margin-block: 5rem;
+  gap: 5rem;
 }
 
 .caracteristique__content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+}
+
+.caracteristique__information{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+ 
+}
+
+.caracteristique__information-title{
+  font-size: 11px;
+  text-align: center;
+}
+
+
+
+.caracteristique__information-value{
+  font-weight: bold;
 }
 
 
