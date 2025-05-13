@@ -126,45 +126,41 @@
         "padding_bottom": 36
       }
     },
-    "collection_list_aWkjLR": {
-      "type": "collection-list",
+    "image_banner_JWxKTL": {
+      "type": "image-banner",
       "blocks": {
-        "featured_collection_tQUMUp": {
-          "type": "featured_collection",
+        "heading_dqFQPV": {
+          "type": "heading",
           "settings": {
-            "collection": ""
+            "heading": "Trottinette électrique",
+            "heading_size": "h1"
           }
         },
-        "featured_collection_NRJNzy": {
-          "type": "featured_collection",
+        "text_EJYhmC": {
+          "type": "text",
           "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_C39een": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "text": "Voyagez rapidement avec la selection de nos produits",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "featured_collection_tQUMUp",
-        "featured_collection_NRJNzy",
-        "featured_collection_C39een"
+        "heading_dqFQPV",
+        "text_EJYhmC"
       ],
-      "name": "t:sections.collection-list.presets.name",
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 2,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify://shop_images/e-scooter_montain_swiss_background.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     },
     "featured_collection_fkwri8": {
@@ -201,7 +197,7 @@
     "image_banner",
     "featured_collection",
     "collection_list_Lq7bdV",
-    "collection_list_aWkjLR",
+    "image_banner_JWxKTL",
     "featured_collection_fkwri8"
   ]
 }
