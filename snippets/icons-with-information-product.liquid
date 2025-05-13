@@ -1,0 +1,20 @@
+{% comment %} 
+  Snippet : icon-with-information-product 
+  Props attendues :
+  - title : string → le nom de la caractéristique
+  - value : string → la valeur à afficher
+  - icon : string → le nom de l’icône (à toi d'adapter si besoin)
+{% endcomment %}
+
+{% if value %}
+  <div class="caracteristique__content">
+    <div class="caracteristique__icon">
+      {% render 'lucide-icon'
+        , name: icon %}
+    </div>
+    <div class="caracteristique__information">
+      <span class="caracteristique__information-title">{{ title }}</span>
+      <span class="caracteristique__information-value">{{ value }}</span>
+    </div>
+  </div>
+{% endif %}
