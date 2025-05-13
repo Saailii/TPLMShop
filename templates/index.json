@@ -19,6 +19,13 @@
             "heading_size": "h0"
           }
         },
+        "text_nWGVeV": {
+          "type": "text",
+          "settings": {
+            "text": "La mobilité pour tous n'est pas un mythe",
+            "text_style": "body"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -33,17 +40,18 @@
       },
       "block_order": [
         "heading",
+        "text_nWGVeV",
         "button"
       ],
       "settings": {
         "image": "shopify://shop_images/velo_electrique_tout_terrain_logo_TPLM_sur_montagne_suisse.jpg",
-        "image_overlay_opacity": 10,
+        "image_overlay_opacity": 50,
         "image_height": "medium",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": false
