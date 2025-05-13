@@ -29,7 +29,7 @@
 .caracteristique__information{
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: start;
   width: max(6.75rem,7.6666666667vw);
   
@@ -57,7 +57,7 @@
 
 @media screen and (min-width: 540px)  {
   .caracteristique__main {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   
   
@@ -69,13 +69,28 @@
 
 @media screen and (min-width: 768px)    {
   .caracteristique__main {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .caracteristique__information-title{
     font-size: 15px;
   }
   .caracteristique__information-value{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 13px;
   }
+  .caracteristique__information{
+    
+    justify-content: center;
+
+  }
+  
+  .caracteristique__content {
+  
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  
+  
+}
 }
