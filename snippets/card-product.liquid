@@ -43,6 +43,7 @@
   padding-inline: 1rem;
   border: 1px solid #d4d4d4;
   border-radius: 0.5rem;
+  font-size: 1.2rem;
 
 
 }
@@ -607,12 +608,7 @@
               {{- 'products.product.sold_out' | t -}}
             </span>
           {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-            <span
-              id="Badge-{{ section_id }}-{{ card_product.id }}"
-              class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
-            >
-              {{- 'products.product.on_sale' | t -}}
-            </span>
+           
           {%- endif -%}
         </div>
       </div>
