@@ -1,0 +1,46 @@
+{% comment %} 
+  Usage:
+  {% render 'more-product-info',%}
+{%endcomment%}
+
+{% style %}
+
+
+{% endstyle %}
+<div>
+  {% if product.metafields.custom.bluetooth.value == true %}
+    <div>
+      <img src="" alt="">
+      <p></p>
+    </div>
+  {% endif %}
+
+  {% if product.metafields.custom.accelerator.value == true %}
+    <div>
+      <img src="{{ 'throttle.jpg' | asset_url }}" alt="Accelerateur ">
+      <p>Test Throttle</p>
+            </div>
+            {% endif %}
+        
+        {% if product.metafields.custom.force.value %}
+            <div>
+                <img src="" alt="">
+                <p></p>
+            </div>
+            {% endif %}
+        </div>
+        
+        {% schema %}
+        {
+            "name": "More product info",
+            "tag": "section",
+            "class": "more-product-info",
+            "limit": 1,
+            "settings": [],
+            "presets": [
+            {
+                "name": "More product info"
+            }
+            ]
+        }
+        {% endschema %}

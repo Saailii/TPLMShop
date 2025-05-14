@@ -95,15 +95,20 @@
               {{ card_product.metafields.custom.puissance_moteur }}W
               </div>
           {% endif %}
-          {% if card_product.metafields.custom.suspension_arri_re  %}
+          {% if card_product.metafields.custom.suspension_arri_re and card_product.metafields.custom.suspension_avant  %}
            <div class="product_metafields">
-              <span>Suspension arrière</span>
+              <span>Suspension Total</span>
             </div>
-          {% endif %}
-          {% if card_product.metafields.custom.suspension_avant  %}
+          {% elsif card_product.metafields.custom.suspension_arri_re == true %}
+          <div class="product_metafields">
+              <span>Suspension Arrière</span>
+            </div>
+          {% elsif card_product.metafields.custom.suspension_avant  %}
            <div class="product_metafields">
               <span>Suspension avant</span>
             </div>
+          
+
           {% endif %}
             
       </div>

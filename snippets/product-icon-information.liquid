@@ -1,37 +1,42 @@
 {% comment %} 
-  render icon with information product 
-  Accepts:
-  - block: {Object} passes in the block information. 
-  Usage: 
-  {% render 'icon-with-information-product', %}
+                                render icon with information product 
+                                Accepts:
+                                - block: {Object} passes in the block information. 
+                                Usage: 
+                                {% render 'product-icon-information', %}
 {% endcomment %}
 
 
 <div class="caracteristique__main">
   <!-- Icône Lucide (licence MIT) - https://lucide.dev -->
   {% if product.metafields.custom.puissance_moteur %}
-    {% assign moteurString = product.metafields.custom.puissance_moteur | append: ' W' %}
-    {% render 'icons-with-information-product' title: "Moteur" value: moteurString icon: "biceps-flexed" %}
+    {% if product.metafields.custom.double_moteur %}
+      {% assign moteurString = product.metafields.custom.puissance_moteur | append: 'W *2' %}
+      {% render 'icons-with-information-product' title: "Double Moteur" value: moteurString icon: "biceps-flexed" %}
+    {% else %}
+      {% assign moteurString = product.metafields.custom.puissance_moteur | append: ' W' %}
+      {% render 'icons-with-information-product' title: "Moteur" value: moteurString icon: "biceps-flexed" %}
+    {% endif %}
+
+
   {% endif %}
   {% if product.metafields.custom.poids %}
     {% render 'icons-with-information-product' title: "Poids" value: product.metafields.custom.poids.value icon: "weight" %}
   {% endif %}
-  {% if product.metafields.custom.suspension_arri_re %}
-    {% if product.metafields.custom.suspension_arri_re == true %}
-      {% assign suspension_arriere_value = "Oui" %}
-    {% else %}
-      {% assign suspension_arriere_value = "Non" %}
-    {% endif %}
-    {% render 'icons-with-information-product' title: "Suspension arrière" value: suspension_arriere_value icon: "suspension" %}
+  {% if product.metafields.custom.suspension_arri_re.value == true and product.metafields.custom.suspension_avant.value == true %}
+    {% assign suspension_title = "Suspension Total" %}
+    {% assign suspension_value = "Oui" %}
+  {% elsif product.metafields.custom.suspension_arri_re.value == true %}
+    {% assign suspension_title = "Suspension Arrière" %}
+    {% assign suspension_value = "Oui" %}
+  {% elsif product.metafields.custom.suspension_avant.value == true %}
+    {% assign suspension_title = "Suspension Avant" %}
+    {% assign suspension_value = "Oui" %}
+
   {% endif %}
-  {% if product.metafields.custom.suspension_avant %}
-    {% if product.metafields.custom.suspension_avant == true %}
-      {% assign suspension_avant_value = "Oui" %}
-    {% else %}
-      {% assign suspension_avant_value = "Non" %}
-    {% endif %}
-    {% render 'icons-with-information-product' title: "Suspension avant" value: suspension_avant_value icon: "suspension" %}
-  {% endif %}
+  {% render 'icons-with-information-product' title: suspension_title value: suspension_value icon: "suspension" %}
+
+
   {% if product.metafields.custom.batterie %}
     {% render 'icons-with-information-product' title: "Batterie" value: product.metafields.custom.batterie icon: "battery" %}
   {% endif %}
@@ -40,6 +45,14 @@
     {% render 'icons-with-information-product' title: "Vitesse" value: speedString icon: "speed" %}
 
 
+  {% endif %}
+  {% if product.metafields.custom.assistance %}
+    {% if product.metafields.custom.assistance == true %}
+      {% assign assistance_value = "Oui" %}
+    {% else %}
+      {% assign assistance_value = "Non" %}
+    {% endif %}
+    {% render 'icons-with-information-product' title: "Assistance" value: assistance_value icon: "assistance" %}
   {% endif %}
 
 </div>

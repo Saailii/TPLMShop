@@ -69,7 +69,7 @@
 
 @media screen and (min-width: 768px)    {
   .caracteristique__main {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .caracteristique__information-title{
     font-size: 15px;
