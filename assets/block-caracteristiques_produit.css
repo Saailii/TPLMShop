@@ -22,6 +22,8 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+ 
+  padding: 1rem 0;
   
   
 }
@@ -56,21 +58,14 @@
 }
 
 @media screen and (min-width: 540px)  {
-  .caracteristique__main {
-    grid-template-columns: repeat(2, 1fr);
-  }
   
-  
-
 
 }
 
 
 
-@media screen and (min-width: 768px)    {
-  .caracteristique__main {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media screen and (min-width: 990px)    {
+  
   .caracteristique__information-title{
     font-size: 15px;
   }
@@ -80,7 +75,7 @@
   }
   .caracteristique__information{
     
-    justify-content: center;
+    justify-content: stcenterart;
 
   }
   
@@ -90,6 +85,7 @@
   justify-content: start;
   align-items: start;
   gap: 1rem;
+  padding: 5px
   
   
 }

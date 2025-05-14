@@ -1,46 +1,49 @@
 {% comment %} 
-  Usage:
-  {% render 'more-product-info',%}
+              Usage:
+              {% render 'more-product-info',%}
 {%endcomment%}
 
 {% style %}
-
+  .more-product__information {
+    height: 100%;
+  }
 
 {% endstyle %}
-<div>
-  {% if product.metafields.custom.bluetooth.value == true %}
+<div class="more-product__information">
+  aaaaaaaaaaaaaaaa
+  {% if product.metafields.custom.bluetooth.value.value %}
     <div>
       <img src="" alt="">
       <p></p>
     </div>
   {% endif %}
 
-  {% if product.metafields.custom.accelerator.value == true %}
+  {% if product.metafields.custom.accelerator.value %}
     <div>
       <img src="{{ 'throttle.jpg' | asset_url }}" alt="Accelerateur ">
-      <p>Test Throttle</p>
-            </div>
-            {% endif %}
-        
-        {% if product.metafields.custom.force.value %}
-            <div>
-                <img src="" alt="">
-                <p></p>
-            </div>
-            {% endif %}
-        </div>
-        
-        {% schema %}
-        {
-            "name": "More product info",
-            "tag": "section",
-            "class": "more-product-info",
-            "limit": 1,
-            "settings": [],
-            "presets": [
-            {
-                "name": "More product info"
-            }
-            ]
-        }
-        {% endschema %}
+      <p>Test ThrottleAAAAAAAAAAAAAAA</p>
+    </div>
+  {% endif %}
+
+  {% if product.metafields.custom.force.value %}
+    <div>
+      <img src="" alt="">
+      <p></p>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "More product info",
+    "tag": "section",
+    "class": "more-product-info",
+    "limit": 1,
+    "settings": [],
+    "presets": [
+      {
+        "name": "More product info"
+      }
+    ]
+  }
+{% endschema %}
