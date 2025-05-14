@@ -99,11 +99,16 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "product-metafields": {
+      "type": "product-metafields"
     }
   },
   "order": [
     "main",
+    
     "more_product_info_QqwM6r",
+    "product-metafields",
     "related-products"
   ]
 }
