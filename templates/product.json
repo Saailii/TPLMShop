@@ -77,10 +77,6 @@
         "padding_bottom": 12
       }
     },
-    "more-product-info": {
-      "type": "more-product-info",
-      "settings": {}
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -98,11 +94,16 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "more_product_info_QqwM6r": {
+      "type": "more-product-info",
+      "name": "More product info",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "more-product-info",
+    "more_product_info_QqwM6r",
     "related-products"
   ]
 }
