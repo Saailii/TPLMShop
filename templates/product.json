@@ -34,6 +34,10 @@
             "swatch_shape": "square"
           }
         },
+        "icon_information_4Jhw4P": {
+          "type": "icon_information",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -46,10 +50,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "icon_information_4Jhw4P": {
-          "type": "icon_information",
-          "settings": {}
         }
       },
       "block_order": [
@@ -57,9 +57,9 @@
         "title",
         "price",
         "variant_picker",
+        "icon_information_4Jhw4P",
         "buy_buttons",
-        "share",
-        "icon_information_4Jhw4P"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
