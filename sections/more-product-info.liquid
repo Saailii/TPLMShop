@@ -1,15 +1,17 @@
 {% comment %} 
-                                                                                              Usage:
-                                                                                              {% render 'more-product-info',%}
+                                                                                                                                              Usage:
+                                                                                                                                              {% render 'more-product-info',%}
 {%endcomment%}
 
 {% style %}
 
   .more-product__accelerator {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-evenly;
+    gap: 4rem;
   }
   .more-product__accelerator img {
     width: 100%
@@ -18,7 +20,7 @@
   .more-product__accelerator__title {
     font-size: 16px;
     justify-self: start;
-    align-self: center;
+    align-self: start;
     font-weight: bold
   }
 
@@ -29,10 +31,13 @@
     align-self: center;
   }
   .more-product__accelerator__text {
-    font-size: 11px
+    font-size: 11px;
+    text-align: justify;
+
   }
 
-  @media screen and (min-width: 1024px) {
+
+  @media screen and (min-width: 768px) {
 
 
     .more-product__accelerator {
@@ -46,10 +51,12 @@
     }
 
     .more-product__accelerator img {
-      width: 40%
+      width: 30%
     }
 
-
+    .more-product__accelerator__content {
+      padding-right: 5rem;
+    }
   }
 {% endstyle %}
 <div class="more-product__information page-width">
@@ -67,7 +74,7 @@
         src="{{ 'throttle.jpg' | asset_url }}"
         alt="Accelerateur"
         width="600">
-      <div>
+      <div class="more-product__accelerator__content">
         <h4 class="more-product__accelerator__title">Prenez le contrôle. Accélérez votre liberté.</h4>
         <p class="more-product__accelerator__text">Découvrez le vélo qui redéfinit vos trajets. Grâce à son accélérateur intégré, vous passez d’un simple coup de pédale à une poussée de puissance instantanée. Que ce soit pour gravir une côte, dépasser la circulation ou simplement profiter du vent dans le dos, ce vélo répond à vos envies… à la seconde près.</p>
 

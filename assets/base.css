@@ -2015,6 +2015,20 @@ input[type='checkbox'] {
   position: relative;
 }
 
+.product__info-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__info-price-container {
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .product__info-container .loading__spinner:not(.hidden) ~ *,
 .quantity__rules-cart .loading__spinner:not(.hidden) ~ * {
   visibility: hidden;
@@ -2362,6 +2376,7 @@ input[type='checkbox'] {
   .header--has-app {
     grid-template-columns: auto 1fr auto;
   }
+  
 }
 
 @media screen and (min-width: 990px) {
@@ -2696,6 +2711,12 @@ details[open] .modal-overlay::after {
 @media screen and (min-width: 750px) {
   .search-modal__close-button {
     right: 1rem;
+  }
+  .product__info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
 
   .search-modal__content {
