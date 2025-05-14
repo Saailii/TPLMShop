@@ -1,126 +1,168 @@
 <div class="product-metafields page-width">
-  <div class="product-info-grid">
-    {% if product.metafields.custom.double_moteur %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          <img src="path-to-double-motor-icon.png" alt="Double moteur icon">
-        </div>
-        <strong>Double moteur</strong>
-        <p>{{ product.metafields.custom.double_moteur }}</p>
-      </div>
-    {% endif %}
+  <details class="accordion-product">
+    <summary class="accordion-header">
+      <h3>Descriptif du produit</h3>
+    </summary>
+    <div class="accordion-body">
+      <div class="product-info-grid">
+        {% if product.metafields.custom.double_moteur %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              <img src="path-to-double-motor-icon.png" alt="Double moteur icon">
+            </div>
+            <strong>Double moteur</strong>
+            <p>{{ product.metafields.custom.double_moteur }}</p>
+          </div>
+        {% endif %}
 
-    {% if product.metafields.custom.force %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          {% render 'lucide-icon', name: 'force' %}
-        </div>
-        <strong>Force</strong>
-        <p>{{ product.metafields.custom.force }} NM</p>
-      </div>
-    {% endif %}
+        {% if product.metafields.custom.force %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'force' %}
+            </div>
+            <strong>Force</strong>
+            <p>{{ product.metafields.custom.force }} NM</p>
+          </div>
+        {% endif %}
 
-    {% if product.metafields.custom.bluetooth %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          {% render 'lucide-icon', name: 'bluetooth' %}
-        </div>
-        <strong>Bluetooth</strong>
-        <p>{{ product.metafields.custom.bluetooth }}</p>
-      </div>
-    {% endif %}
+        {% if product.metafields.custom.bluetooth %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'bluetooth' %}
+            </div>
+            <strong>Bluetooth</strong>
+            <p>{{ product.metafields.custom.bluetooth }}</p>
+          </div>
+        {% endif %}
 
-    {% if product.metafields.custom.accelerateur %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          {% render 'lucide-icon', name: 'accelerateur' %}
-        </div>
-        <strong>Accélérateur</strong>
-        {% if product.metafields.custom.accelerateur == true %}
-          <p>Oui</p>
-        {% else %}
-          <p>Non</p>
+        {% if product.metafields.custom.accelerateur %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'accelerateur' %}
+            </div>
+            <strong>Accélérateur</strong>
+            {% if product.metafields.custom.accelerateur == true %}
+              <p>Oui</p>
+            {% else %}
+              <p>Non</p>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if product.metafields.custom.assistance %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'assistance' %}
+            </div>
+            <strong>Assistance</strong>
+            {% if product.metafields.custom.assistance == true %}
+              <p>Oui</p>
+            {% else %}
+              <p>Non</p>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if product.metafields.custom.vitesse %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'speed' %}
+            </div>
+            <strong>Vitesse</strong>
+            <p>{{ product.metafields.custom.vitesse }}</p>
+          </div>
+        {% endif %}
+
+        {% if product.metafields.custom.poids %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'poids' %}
+            </div>
+            <strong>Poids</strong>
+            <p>{{ product.metafields.custom.poids.value }}</p>
+          </div>
+        {% endif %}
+
+        {% if product.metafields.custom.batterie %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'battery' %}
+            </div>
+            <strong>Batterie</strong>
+            <p>{{ product.metafields.custom.batterie }}</p>
+          </div>
+        {% endif %}
+
+        {% if product.metafields.custom.suspension_avant %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'suspension' %}
+            </div>
+            <strong>Suspension avant</strong>
+            <p>{{ product.metafields.custom.suspension_avant }}</p>
+          </div>
+        {% endif %}
+
+        {% if product.metafields.custom.suspension_arri_re %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'suspension' %}
+            </div>
+            <strong>Suspension arrière</strong>
+            <p>{{ product.metafields.custom.suspension_arri_re }}</p>
+          </div>
+        {% endif %}
+
+        {% if product.metafields.custom.puissance_moteur %}
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'biceps-flexed' %}
+            </div>
+            <strong>Puissance moteur</strong>
+            <p>{{ product.metafields.custom.puissance_moteur }}W</p>
+          </div>
         {% endif %}
       </div>
-    {% endif %}
-
-    {% if product.metafields.custom.assistance %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          {% render 'lucide-icon', name: 'assistance' %}
-        </div>
-        <strong>Assistance</strong>
-        {% if product.metafields.custom.assistance == true %}
-          <p>Oui</p>
-        {% else %}
-          <p>Non</p>
-        {% endif %}
-      </div>
-    {% endif %}
-
-    {% if product.metafields.custom.vitesse %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          {% render 'lucide-icon', name: 'speed' %}
-        </div>
-        <strong>Vitesse</strong>
-        <p>{{ product.metafields.custom.vitesse }}</p>
-      </div>
-    {% endif %}
-
-    {% if product.metafields.custom.poids %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          {% render 'lucide-icon', name: 'poids' %}
-        </div>
-        <strong>Poids</strong>
-        <p>{{ product.metafields.custom.poids.value }}</p>
-      </div>
-    {% endif %}
-
-    {% if product.metafields.custom.batterie %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          {% render 'lucide-icon', name: 'battery' %}
-        </div>
-        <strong>Batterie</strong>
-        <p>{{ product.metafields.custom.batterie }}</p>
-      </div>
-    {% endif %}
-
-    {% if product.metafields.custom.suspension_avant %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          {% render 'lucide-icon', name: 'suspension' %}
-        </div>
-        <strong>Suspension avant</strong>
-        <p>{{ product.metafields.custom.suspension_avant }}</p>
-      </div>
-    {% endif %}
-
-    {% if product.metafields.custom.suspension_arri_re %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          {% render 'lucide-icon', name: 'suspension' %}
-        </div>
-        <strong>Suspension arrière</strong>
-        <p>{{ product.metafields.custom.suspension_arri_re }}</p>
-      </div>
-    {% endif %}
-
-    {% if product.metafields.custom.puissance_moteur %}
-      <div class="product-info-item">
-        <div class="icon-wrapper">
-          {% render 'lucide-icon', name: 'biceps-flexed' %}
-        </div>
-        <strong>Puissance moteur</strong>
-        <p>{{ product.metafields.custom.puissance_moteur }}W</p>
-      </div>
-    {% endif %}
-  </div>
+    </div>
+  </details>
 </div>
 
 {% style %}
+.accordion-product {
+  margin-block: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background: #f9f9f9;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.accordion-header:hover {
+  background: #f1f1f1;
+}
+
+.accordion-body {
+  padding: 1rem;
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+details[open] .accordion-body {
+  display: block;
+}
+
 .product-info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -172,5 +214,14 @@
   margin: 0;
   font-size: 14px;
   color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 {% endstyle %}

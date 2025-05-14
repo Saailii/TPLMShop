@@ -2,91 +2,127 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur les téléphones */
   margin-block: 3rem;
-  gap: 2rem;
-  
-  
-}
-
-.caracteristique__icon {
- 
-  justify-self: center;
-  align-self: center;
-  width: 30px;
+  gap: 1.5rem; /* Reduced gap */
 }
 
 .caracteristique__content {
-  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem; /* Reduced gap */
+  padding: 0.8rem; /* Reduced padding */
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px; /* Slightly smaller border radius */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caracteristique__content:hover {
+  transform: translateY(-3px); /* Reduced hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Reduced shadow on hover */
+}
+
+.caracteristique__icon {
+  justify-self: center;
+  align-self: center;
+  width: 36px; /* Reduced size */
+  height: 36px; /* Reduced size */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
- 
-  padding: 1rem 0;
-  
-  
+  background: #f4f4f4;
+  border-radius: 50%;
 }
 
-.caracteristique__information{
+.caracteristique__icon svg {
+  width: 20px; /* Reduced size */
+  height: 20px; /* Reduced size */
+}
+
+.caracteristique__information {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  width: max(6.75rem,7.6666666667vw);
-  
-  
-  
- 
+  align-items: flex-start;
+  width: auto;
 }
 
-.caracteristique__information-title{
-  font-size: 12px;
+.caracteristique__information-title {
+  font-size: 13px; /* Reduced font size */
   text-align: start;
+  color: #666666;
+  margin-bottom: 3px; /* Reduced margin */
 }
 
-
-
-.caracteristique__information-value{
+.caracteristique__information-value {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 15px; /* Reduced font size */
+  color: #333333;
 }
 
+/* Pour les écrans de petite taille (téléphones) */
+@media screen and (max-width: 540px) {
+  .caracteristique__icon {
+    width: 36px; /* Reduced size */
+    height: 36px;
+  }
 
-.caracteristique__image {
-    border-radius: 100%;
+  .caracteristique__icon svg {
+    width: 20px; /* Reduced size */
+    height: 20px;
+  }
+
+  .caracteristique__information-title {
+    font-size: 13px; /* Reduced size */
+  }
+
+  .caracteristique__information-value {
+    font-size: 15px; /* Reduced size */
+  }
 }
 
-@media screen and (min-width: 540px)  {
-  
+/* Pour les écrans moyens (tablettes) */
+@media screen and (min-width: 540px) {
+  .caracteristique__main {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur les téléphones */
+  }
+  .caracteristique__icon {
+    width: 44px; /* Slightly reduced size */
+    height: 44px;
+  }
 
+  .caracteristique__icon svg {
+    width: 24px; /* Slightly reduced size */
+    height: 24px;
+  }
+
+  .caracteristique__information-title {
+    font-size: 14px; /* Reduced size */
+  }
+
+  .caracteristique__information-value {
+    font-size: 16px; /* Reduced size */
+  }
 }
 
-
-
-@media screen and (min-width: 990px)    {
-  
-  .caracteristique__information-title{
-    font-size: 15px;
+/* Pour les grands écrans (ordinateurs) */
+@media screen and (min-width: 990px) {
+  .caracteristique__main {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Reduced min size */
   }
-  .caracteristique__information-value{
-    font-weight: bold;
-    font-size: 13px;
-  }
-  .caracteristique__information{
-    
-    justify-content: stcenterart;
 
-  }
-  
   .caracteristique__content {
-  
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  gap: 1rem;
-  padding: 5px
-  
-  
-}
+    padding: 1rem; /* Reduced padding */
+  }
+
+  .caracteristique__information-title {
+    font-size: 16px; /* Reduced font size */
+  }
+
+  .caracteristique__information-value {
+    font-size: 18px; /* Reduced font size */
+  }
 }

@@ -1,104 +1,165 @@
 {% comment %} 
-                                                                                                                                              Usage:
-                                                                                                                                              {% render 'more-product-info',%}
-{%endcomment%}
+Usage:
+{% render 'more-product-info' %}
+{% endcomment %}
 
 {% style %}
-
-  .more-product__accelerator {
-    margin-top: 2rem;
+  .more-product__information {
+    margin-block: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: space-evenly;
-    gap: 4rem;
+    gap: 3rem;
   }
-  .more-product__accelerator img {
-    width: 100%
+  
+  .more-product__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    
+    
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .more-product__section_force {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    
+    
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  .more-product__accelerator__title {
-    font-size: 16px;
-    justify-self: start;
-    align-self: start;
-    font-weight: bold
+  
+  .more-product__section img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
-  .more-product__accelerator__subtitle {
-    font-weight: 600;
-    font-size: 14px;
-    justify-self: start;
-    align-self: center;
+  
+  .more-product__content {
+    max-width: 500px;
+    text-align: left;
   }
-  .more-product__accelerator__text {
-    font-size: 11px;
-    text-align: justify;
-
+  
+  .more-product__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
   }
-
+  
+  .more-product__text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .more-product__image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
 
   @media screen and (min-width: 768px) {
+    .more-product__section {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 3rem;
+      padding: 3rem;
+    }
 
-
-    .more-product__accelerator {
-      display: flex;
+    .more-product__section_force{
       flex-direction: row-reverse;
-      align-items: start;
       justify-content: space-evenly;
     }
-    .more-product__accelerator__text {
-      font-size: 14px
+  
+    .more-product__section img {
+      width: 40%; /* Adjusted for better balance */
+      height: auto;
     }
-
-    .more-product__accelerator img {
-      width: 30%
+  
+    .more-product__content {
+      padding-left: 1.5rem;
     }
-
-    .more-product__accelerator__content {
-      padding-right: 5rem;
+  
+    .more-product__title {
+      font-size: 24px;
+    }
+  
+    .more-product__text {
+      font-size: 16px;
     }
   }
-{% endstyle %}
-<div class="more-product__information page-width">
+  
+  @media screen and (min-width: 1200px) {
+    .more-product__section {
+      gap: 4rem;
+      padding: 4rem;
+    }
+  
+    .more-product__section img {
+      width: 35%;
+    }
 
-  {% if product.metafields.custom.bluetooth.value %}
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
-  {% endif %}
 
-  {% if product.metafields.custom.accelerateur.value %}
-    <div class="more-product__accelerator">
-      <img
-        src="{{ 'throttle.jpg' | asset_url }}"
-        alt="Accelerateur"
-        width="600">
-      <div class="more-product__accelerator__content">
-        <h4 class="more-product__accelerator__title">Prenez le contrôle. Accélérez votre liberté.</h4>
-        <p class="more-product__accelerator__text">Découvrez le vélo qui redéfinit vos trajets. Grâce à son accélérateur intégré, vous passez d’un simple coup de pédale à une poussée de puissance instantanée. Que ce soit pour gravir une côte, dépasser la circulation ou simplement profiter du vent dans le dos, ce vélo répond à vos envies… à la seconde près.</p>
-
-        <p class="more-product__accelerator__subtitle">🔋 Une assistance instantanée</p>
-        <p class="more-product__accelerator__text">Appuyez, partez. L’accélérateur vous propulse sans effort dès que vous en avez besoin.</p>
-
-        <p class="more-product__accelerator__subtitle">🌆 Idéal pour la ville comme pour les longues balades</p>
-        <p class="more-product__accelerator__text">Plus besoin de forcer : le plaisir de rouler est enfin à la portée de tous.</p>
-
-        <p class="more-product__accelerator__subtitle">💡 Confort, liberté, et technologie réunis</p>
-        <p class="more-product__accelerator__text">Un design épuré, une technologie fiable et une sensation de fluidité inégalée.</p>
+  }
+  {% endstyle %}
+  
+  <div class="more-product__information page-width">
+    {% if product.metafields.custom.bluetooth.value %}
+      <div class="more-product__section">
+        <img src="{{ 'bluetooth.jpg' | asset_url }}" alt="Bluetooth connection" class="more-product__image">
+        <div class="more-product__content">
+          <h4 class="more-product__title">Connectez-vous instantanément avec le Bluetooth</h4>
+          <p class="more-product__text">Profitez de la simplicité et de la commodité d'une connectivité Bluetooth intégrée. Écoutez votre musique, recevez des notifications et connectez vos appareils en toute simplicité.</p>
+        </div>
       </div>
-    </div>
-  {% endif %}
-
-  {% if product.metafields.custom.force.value %}
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
-  {% endif %}
-</div>
-
-{% schema %}
+    {% endif %}
+  
+    {% if product.metafields.custom.accelerateur.value %}
+      <div class="more-product__section">
+        <img
+          src="{{ 'throttle.jpg' | asset_url }}"
+          alt="Accélérateur - Prenez le contrôle"
+          class="more-product__image">
+        
+        <div class="more-product__content">
+          <h4 class="more-product__title">Prenez le contrôle. Accélérez votre liberté.</h4> 
+          <p class="more-product__text">Découvrez le vélo qui redéfinit vos trajets. Grâce à son accélérateur intégré, vous passez d’un simple coup de pédale à une poussée de puissance instantanée. Que ce soit pour gravir une côte, dépasser la circulation ou simplement profiter du vent dans le dos, ce vélo répond à vos envies à la seconde près.</p>
+      
+          <p class="more-product__text"><strong>🔋 Une assistance instantanée:</strong><br/> Appuyez, partez. L’accélérateur vous propulse sans effort dès que vous en avez besoin.</p>
+          <p class="more-product__text"><strong>🌆 Idéal pour la ville comme pour les longues balades:</strong><br/> Plus besoin de forcer : le plaisir de rouler est enfin à la portée de tous.</p>
+          <p class="more-product__text"><strong>💡 Confort, liberté, et technologie réunis:</strong><br/> Un design épuré, une technologie fiable et une sensation de fluidité inégalée.</p>
+        </div>
+      </div>
+    {% endif %}
+  
+    {% if product.metafields.custom.force.value %}
+      <div class="more-product__section_force">
+        <img src="{{ 'power.jpg' | asset_url }}" alt="Puissance et force" class="more-product__image">
+        <div class="more-product__content">
+          <h4 class="more-product__title">Puissance et Force Maximale</h4>
+          <p class="more-product__text">Avec une puissance exceptionnelle de {{ product.metafields.custom.force.value }} NM, ce produit est conçu pour affronter les terrains les plus difficiles et offrir des performances inégalées, quelles que soient les conditions.</p>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+  
+  {% schema %}
   {
     "name": "More product info",
     "tag": "section",
@@ -108,7 +169,7 @@
     "presets": [
       {
         "name": "More product info"
-      }
-    ]
-  }
-{% endschema %}
+        }
+      ]
+    }
+  {% endschema %}
