@@ -50,6 +50,10 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "icon_information_4Jhw4P": {
+          "type": "icon_information",
+          "settings": {}
         }
       },
       "block_order": [
@@ -59,7 +63,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "share"
+        "share",
+        "icon_information_4Jhw4P"
       ],
       "settings": {
         "enable_sticky_info": true,
