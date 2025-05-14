@@ -1,27 +1,85 @@
 {% comment %} 
-              Usage:
-              {% render 'more-product-info',%}
+                                                                                            Usage:
+                                                                                            {% render 'more-product-info',%}
 {%endcomment%}
 
 {% style %}
-  .more-product__information {
-    height: 100%;
+
+  .more-product__accelerator {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: space-evenly;
+  }
+  .more-product__accelerator img {
+    width: 100%
   }
 
+  .more-product__accelerator__title {
+    font-size: 16px;
+    justify-self: start;
+    align-self: center;
+    font-weight: bold
+  }
+
+  .more-product__accelerator__subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    justify-self: start;
+    align-self: center;
+  }
+  .more-product__accelerator__text {
+    font-size: 11px
+  }
+
+  @media screen and (min-width: 1024px) {
+
+
+    .more-product__accelerator {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: start;
+      justify-content: space-evenly;
+    }
+    .more-product__accelerator__text {
+      font-size: 14px
+    }
+
+    .more-product__accelerator img {
+      width: 40%
+    }
+
+
+  }
 {% endstyle %}
-<div class="more-product__information">
-  aaaaaaaaaaaaaaaa
-  {% if product.metafields.custom.bluetooth.value.value %}
+<div class="more-product__information page-width">
+
+  {% if product.metafields.custom.bluetooth.value %}
     <div>
       <img src="" alt="">
       <p></p>
     </div>
   {% endif %}
 
-  {% if product.metafields.custom.accelerator.value %}
-    <div>
-      <img src="{{ 'throttle.jpg' | asset_url }}" alt="Accelerateur ">
-      <p>Test ThrottleAAAAAAAAAAAAAAA</p>
+  {% if product.metafields.custom.accelerateur.value %}
+    <div class="more-product__accelerator">
+      <img
+        src="{{ 'throttle.jpg' | asset_url }}"
+        alt="Accelerateur"
+        width="600">
+      <div>
+        <h4 class="more-product__accelerator__title">Prenez le contrôle. Accélérez votre liberté.</h4>
+        <p class="more-product__accelerator__text">Découvrez le vélo qui redéfinit vos trajets. Grâce à son accélérateur intégré, vous passez d’un simple coup de pédale à une poussée de puissance instantanée. Que ce soit pour gravir une côte, dépasser la circulation ou simplement profiter du vent dans le dos, ce vélo répond à vos envies… à la seconde près.</p>
+
+        <p class="more-product__accelerator__subtitle">🔋 Une assistance instantanée</p>
+        <p class="more-product__accelerator__text">Appuyez, partez. L’accélérateur vous propulse sans effort dès que vous en avez besoin.</p>
+
+        <p class="more-product__accelerator__subtitle">🌆 Idéal pour la ville comme pour les longues balades</p>
+        <p class="more-product__accelerator__text">Plus besoin de forcer : le plaisir de rouler est enfin à la portée de tous.</p>
+
+        <p class="more-product__accelerator__subtitle">💡 Confort, liberté, et technologie réunis</p>
+        <p class="more-product__accelerator__text">Un design épuré, une technologie fiable et une sensation de fluidité inégalée.</p>
+      </div>
     </div>
   {% endif %}
 
