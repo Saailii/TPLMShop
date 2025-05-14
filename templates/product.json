@@ -31,12 +31,8 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "square"
           }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -61,7 +57,6 @@
         "title",
         "price",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
         "share",
         "icon_information_4Jhw4P"
@@ -100,14 +95,15 @@
         "padding_bottom": 28
       }
     },
-    "more-product-info": {
-      "type": "more-product-info"
+    "more_product_info_QqwM6r": {
+      "type": "more-product-info",
+      "name": "More product info",
+      "settings": {}
     }
-    
   },
   "order": [
     "main",
-    "related-products",
-    "more-product-info"
+    "more_product_info_QqwM6r",
+    "related-products"
   ]
 }
