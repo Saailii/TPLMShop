@@ -38,7 +38,7 @@
         {% if product.metafields.custom.accelerateur %}
           <div class="product-info-item">
             <div class="icon-wrapper">
-              {% render 'lucide-icon', name: 'accelerateur' %}
+              {% render 'lucide-icon', name: 'accelerator' %}
             </div>
             <strong>Accélérateur</strong>
             {% if product.metafields.custom.accelerateur == true %}
@@ -76,7 +76,7 @@
         {% if product.metafields.custom.poids %}
           <div class="product-info-item">
             <div class="icon-wrapper">
-              {% render 'lucide-icon', name: 'poids' %}
+              {% render 'lucide-icon', name: 'weight' %}
             </div>
             <strong>Poids</strong>
             <p>{{ product.metafields.custom.poids.value }}</p>
@@ -94,16 +94,26 @@
         {% endif %}
 
         {% if product.metafields.custom.suspension_avant %}
-          <div class="product-info-item">
-            <div class="icon-wrapper">
-              {% render 'lucide-icon', name: 'suspension' %}
-            </div>
+          {% if product.metafields.custom.suspension_avant == true %}
+            {% assign suspension_avant_value = 'Oui' %}
+          {% else %}
+            {% assign suspension_avant_value = 'Non' %}
+          {% endif %}
+            <div class="product-info-item">
+              <div class="icon-wrapper">
+                {% render 'lucide-icon', name: 'suspension' %}
+              </div>
             <strong>Suspension avant</strong>
-            <p>{{ product.metafields.custom.suspension_avant }}</p>
+            <p>{{ suspension_avant_value }}</p>
           </div>
         {% endif %}
 
         {% if product.metafields.custom.suspension_arri_re %}
+          {% if product.metafields.custom.suspension_arri_re == true %}
+            {% assign suspension_arri_re_value = 'Oui' %}
+          {% else %}
+            {% assign suspension_arri_re_value = 'Non' %}
+          {% endif %}
           <div class="product-info-item">
             <div class="icon-wrapper">
               {% render 'lucide-icon', name: 'suspension' %}
@@ -137,7 +147,7 @@
 
 .accordion-header {
   background: #f9f9f9;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
@@ -146,7 +156,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .accordion-header:hover {
@@ -154,7 +163,7 @@
 }
 
 .accordion-body {
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: none;
   animation: fadeIn 0.3s ease-in-out;
 }
@@ -165,47 +174,37 @@ details[open] .accordion-body {
 
 .product-info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
 .product-info-item {
-  text-align: center;
-  background: #ffffff;
-  padding: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.product-info-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  display: flex; /* Use flexbox to align the icon and text horizontally */
+  align-items: center;
+  gap: 12px; /* Add space between the icon and text */
+  text-align: left;
 }
 
 .icon-wrapper {
+  width: 32px; /* Adjust icon size */
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  margin: 0 auto 16px;
+  border-radius: 50%; /* Optional: Keep the circular style for the icon */
 }
 
 .icon-wrapper img,
 .icon-wrapper svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .product-info-item strong {
   display: block;
-  margin: 10px 0 5px;
-  font-size: 18px;
+  margin-bottom: 4px;
+  font-size: 14px;
   font-weight: bold;
   color: #333;
 }
