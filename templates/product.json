@@ -102,13 +102,17 @@
     },
     "product-metafields": {
       "type": "product-metafields"
+    },
+    "judgeme-widget": {
+      "type": "judgeme-widget"
     }
   },
   "order": [
     "main",
-    
     "more_product_info_QqwM6r",
     "product-metafields",
+    "judgeme-widget",
     "related-products"
+    
   ]
 }
