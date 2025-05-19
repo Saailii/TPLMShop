@@ -65,6 +65,28 @@
             <strong>Vitesse</strong>
             <p>{{ product.metafields.custom.vitesse | default: 'Non spécifié' }}km/h</p>
           </div>
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'speed' %}
+            </div>
+            <strong>Vitess max</strong>
+            <p>{{ product.metafields.custom.vitesse_max | default: 'Non spécifié' }}km/h</p>
+          </div>
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'distance' %}
+            </div>
+            <strong>Dist. maximal électrique</strong>
+            <p>{{ product.metafields.custom.distance_100_electrique | default: 'Non spécifié' }}km</p>
+          </div>
+
+          <div class="product-info-item">
+            <div class="icon-wrapper">
+              {% render 'lucide-icon', name: 'distance' %}
+            </div>
+            <strong>Dist. maximal assistance</strong>
+            <p>{{ product.metafields.custom.distance_avec_assistance | default: 'Non spécifié' }}km</p>
+          </div>
           
           <div class="product-info-item">
             <div class="icon-wrapper">
@@ -97,6 +119,8 @@
             <strong>Suspension arrière</strong>
             <p>{% if product.metafields.custom.suspension_arri_re == true %}Oui{% elsif product.metafields.custom.suspension_arri_re == false %}Non{% else %}Non {% endif %}</p>
           </div>
+
+          
           
       </div>
     </div>
