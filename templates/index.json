@@ -74,20 +74,11 @@
             "text": "<p><strong>Chaque vendredi</strong>, profitez de notre <strong>offre exclusive</strong> de la <strong>semaine</strong> : des <strong>remises exceptionnelles</strong> à ne pas manquer sur une sélection de produits.<br/><br/>La selection de ce vendredi est : <strong>RS-01M</strong> et <strong>RS-01</strong></p>",
             "text_style": "body"
           }
-        },
-        "button_4cyyRR": {
-          "type": "button",
-          "settings": {
-            "button_label": "Texte du bouton",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_xTAbmr",
-        "text_rUPADd",
-        "button_4cyyRR"
+        "text_rUPADd"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
