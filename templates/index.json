@@ -58,6 +58,54 @@
         "show_text_below": false
       }
     },
+    "image_with_text_zfmgkh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xTAbmr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Offre du vendredi !",
+            "heading_size": "h1"
+          }
+        },
+        "text_rUPADd": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Chaque vendredi</strong>, profitez de notre <strong>offre exclusive</strong> de la <strong>semaine</strong> : des <strong>remises exceptionnelles</strong> à ne pas manquer sur une sélection de produits.<br/><br/>La selection de ce vendredi est : <strong>RS-01M</strong> et <strong>RS-01</strong></p>",
+            "text_style": "body"
+          }
+        },
+        "button_4cyyRR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Texte du bouton",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xTAbmr",
+        "text_rUPADd",
+        "button_4cyyRR"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/velo_electrique_rs_a01_blanc.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -155,6 +203,7 @@
   },
   "order": [
     "image_banner",
+    "image_with_text_zfmgkh",
     "featured_collection",
     "image_banner_JWxKTL",
     "featured_collection_fkwri8"
