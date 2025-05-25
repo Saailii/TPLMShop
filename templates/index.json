@@ -64,14 +64,14 @@
         "heading_xTAbmr": {
           "type": "heading",
           "settings": {
-            "heading": "Offre du vendredi !",
+            "heading": "Bon de  bienvenue 20%",
             "heading_size": "h1"
           }
         },
         "text_rUPADd": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Chaque vendredi</strong>, profitez de notre <strong>offre exclusive</strong> de la <strong>semaine</strong> : des <strong>remises exceptionnelles</strong> à ne pas manquer sur une sélection de produits.<br/><br/>La selection de ce vendredi est : <strong>RS-01M</strong> et <strong>RS-01</strong></p>",
+            "text": "<p>Pour fêter votre arrivée, profitez de <strong>-20% sur votre première commande</strong> avec le code : <strong>BIENVENUE20</strong></p><p>Dépêchez-vous, cette offre est valable du 26.05.2025 au 01.06.2025  !</p>",
             "text_style": "body"
           }
         }
@@ -80,13 +80,12 @@
         "heading_xTAbmr",
         "text_rUPADd"
       ],
-      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/velo_electrique_rs_a01_blanc.jpg",
+        "image": "shopify://shop_images/IMG_2883_f69edf4f-ea65-4202-b824-b5d9c3cbef92.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
