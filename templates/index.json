@@ -71,7 +71,7 @@
         "text_rUPADd": {
           "type": "text",
           "settings": {
-            "text": "<p>Pour fêter votre arrivée, profitez de <strong>-20% sur votre première commande</strong> avec le code : <strong>BIENVENUE20</strong></p><p>Dépêchez-vous, cette offre est valable du 26.05.2025 au 01.06.2025  !</p><p>Livraison entre 5-10 jours ouvrables!!!!</p>",
+            "text": "<p>Pour fêter votre arrivée, profitez de <strong>-20% sur votre première commande</strong> avec le code : <strong>BIENVENUE20</strong></p><p>Dépêchez-vous, cette offre est valable du 26.05.2025 au 01.06.2025  !</p><p>Livraison entre 5-10 jours ouvrables!!!!</p><p>Vendredi de folie est de retour!!!</p><p>Seulement le 31 mai 2025, abonnez vous a notre newsletter et recevez un bon de 100chf à faire valoir sur toute la gamme proposée sur TPLMSHOP!!!!!</p><p></p>",
             "text_style": "body"
           }
         }
@@ -80,7 +80,6 @@
         "heading_xTAbmr",
         "text_rUPADd"
       ],
-      "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/IMG_2883_f69edf4f-ea65-4202-b824-b5d9c3cbef92.jpg",
         "height": "adapt",
@@ -147,7 +146,6 @@
         "heading_dqFQPV",
         "text_EJYhmC"
       ],
-      "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/e-scooter_montain_swiss_background.jpg",
         "image_overlay_opacity": 0,
@@ -164,7 +162,6 @@
     },
     "featured_collection_fkwri8": {
       "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "trottinette-electrique",
         "products_to_show": 4,
