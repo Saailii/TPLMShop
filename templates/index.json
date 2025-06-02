@@ -58,44 +58,6 @@
         "show_text_below": false
       }
     },
-    "image_with_text_zfmgkh": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_xTAbmr": {
-          "type": "heading",
-          "settings": {
-            "heading": "Bon de  bienvenue 20%",
-            "heading_size": "h1"
-          }
-        },
-        "text_rUPADd": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pour fêter votre arrivée, profitez de <strong>-20% sur votre première commande</strong> avec le code : <strong>BIENVENUE20</strong></p><p>Dépêchez-vous, cette offre est valable du 26.05.2025 au 01.06.2025  !</p><p>Livraison entre 5-10 jours ouvrables!!!!</p><p>contactez nous par WhatsApp à l'aide du widget en bas a gauche  !</p><p></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_xTAbmr",
-        "text_rUPADd"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/IMG_2883_f69edf4f-ea65-4202-b824-b5d9c3cbef92.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -191,7 +153,6 @@
   },
   "order": [
     "image_banner",
-    "image_with_text_zfmgkh",
     "featured_collection",
     "image_banner_JWxKTL",
     "featured_collection_fkwri8"
