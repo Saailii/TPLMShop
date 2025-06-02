@@ -39,10 +39,18 @@
             "text": "Profitez de nos offres de lancement et de la livraison gratuite sur tous nos produits !",
             "link": ""
           }
+        },
+        "announcement_QAKebr": {
+          "type": "announcement",
+          "settings": {
+            "text": "Twint Acceptez",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_QAKebr"
       ],
       "settings": {
         "auto_rotate": false,
