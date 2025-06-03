@@ -46,11 +46,19 @@
             "text": "Le moyen de payement Twint est enfin arrivé !",
             "link": ""
           }
+        },
+        "announcement_9qGAK4": {
+          "type": "announcement",
+          "settings": {
+            "text": "10% SUR TOUT LES MODELES AVEC NOTRE BON DE REDUCTION \"VELO10\"",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
-        "announcement_QAKebr"
+        "announcement_QAKebr",
+        "announcement_9qGAK4"
       ],
       "settings": {
         "auto_rotate": false,
@@ -61,10 +69,36 @@
         "enable_country_selector": false,
         "enable_language_selector": false
       }
+    },
+    "announcement_bar_F9BHHG": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_hFamec": {
+          "type": "announcement",
+          "settings": {
+            "text": "Bienvenue dans notre boutique",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_hFamec"
+      ],
+      "name": "t:sections.announcement-bar.presets.name",
+      "settings": {
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
     }
   },
   "order": [
     "header",
-    "announcement-bar"
+    "announcement-bar",
+    "announcement_bar_F9BHHG"
   ]
 }
