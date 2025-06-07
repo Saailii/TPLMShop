@@ -76,18 +76,26 @@
         "announcement_hFamec": {
           "type": "announcement",
           "settings": {
+            "text": "délai de livraison 5 à 9 jours ouvrables",
+            "link": ""
+          }
+        },
+        "announcement_LEH3kH": {
+          "type": "announcement",
+          "settings": {
             "text": "Bienvenue dans notre boutique",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_hFamec"
+        "announcement_hFamec",
+        "announcement_LEH3kH"
       ],
       "name": "t:sections.announcement-bar.presets.name",
       "settings": {
-        "auto_rotate": false,
-        "change_slides_speed": 5,
+        "auto_rotate": true,
+        "change_slides_speed": 3,
         "color_scheme": "",
         "show_line_separator": true,
         "show_social": false,
