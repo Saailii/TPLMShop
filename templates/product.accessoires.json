@@ -27,6 +27,10 @@
           "type": "price",
           "settings": {}
         },
+        "description_FfqtgL": {
+          "type": "description",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -56,6 +60,7 @@
         "vendor",
         "title",
         "price",
+        "description_FfqtgL",
         "variant_picker",
         "icon_information_4Jhw4P",
         "buy_buttons",
@@ -82,6 +87,15 @@
       "name": "More product info",
       "settings": {}
     },
+    "product-metafields": {
+      "type": "product-metafields",
+      "disabled": true,
+      "settings": {}
+    },
+    "judgeme-widget": {
+      "type": "judgeme-widget",
+      "settings": {}
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -99,14 +113,6 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "product-metafields": {
-      "type": "product-metafields",
-      "settings": {}
-    },
-    "judgeme-widget": {
-      "type": "judgeme-widget",
-      "settings": {}
     }
   },
   "order": [
