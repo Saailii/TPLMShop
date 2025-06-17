@@ -27,16 +27,16 @@
           "type": "price",
           "settings": {}
         },
-        "description_FfqtgL": {
-          "type": "description",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
             "swatch_shape": "square"
           }
+        },
+        "description_FfqtgL": {
+          "type": "description",
+          "settings": {}
         },
         "icon_information_4Jhw4P": {
           "type": "icon_information",
@@ -60,8 +60,8 @@
         "vendor",
         "title",
         "price",
-        "description_FfqtgL",
         "variant_picker",
+        "description_FfqtgL",
         "icon_information_4Jhw4P",
         "buy_buttons",
         "share"
