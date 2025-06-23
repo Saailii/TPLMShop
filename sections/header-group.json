@@ -76,14 +76,14 @@
         "announcement_hFamec": {
           "type": "announcement",
           "settings": {
-            "text": "Vélo, livré monté et testé seulement sur Genève",
+            "text": "Vélo, livré monté et testé seulement sur Genève!!!",
             "link": ""
           }
         },
         "announcement_LEH3kH": {
           "type": "announcement",
           "settings": {
-            "text": "Bienvenue dans notre boutique",
+            "text": "Bienvenue dans notre boutique tplmshop!",
             "link": ""
           }
         }
