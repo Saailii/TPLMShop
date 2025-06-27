@@ -36,21 +36,21 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Livraison gratuite sur tous nos produits !",
+            "text": "dès 1500.- un cadenas ou un casque de votre choix offert !",
             "link": ""
           }
         },
         "announcement_QAKebr": {
           "type": "announcement",
           "settings": {
-            "text": "Avec Twint la le délai de livraison est plus rapide!!!",
+            "text": "Avec Twint la le délai de livraison est plus rapide !",
             "link": ""
           }
         },
         "announcement_9qGAK4": {
           "type": "announcement",
           "settings": {
-            "text": "Abonnez vous 10% sur votre première commande!!!",
+            "text": "Dès 1900.- un cadenas et un casque de votre choix offert !",
             "link": ""
           }
         }
@@ -83,7 +83,7 @@
         "announcement_LEH3kH": {
           "type": "announcement",
           "settings": {
-            "text": "Bienvenue dans notre boutique tplmshop!",
+            "text": "Bienvenue dans notre boutique tplmshop !",
             "link": ""
           }
         }
