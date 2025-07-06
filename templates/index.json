@@ -207,6 +207,76 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "featured_product_tJUeKT": {
+      "type": "featured-product",
+      "blocks": {
+        "text_bwAKWX": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_7bmxNG": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_zU4jyf": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_PEdxfr": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_K6Uri6": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_jh3GEK": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_KCHp96": {
+          "type": "share",
+          "settings": {
+            "share_label": "Partager"
+          }
+        }
+      },
+      "block_order": [
+        "text_bwAKWX",
+        "title_7bmxNG",
+        "price_zU4jyf",
+        "variant_picker_PEdxfr",
+        "quantity_selector_K6Uri6",
+        "buy_buttons_jh3GEK",
+        "share_KCHp96"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "mk-014",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -215,6 +285,7 @@
     "featured_collection_tJARJf",
     "image_banner_JWxKTL",
     "featured_collection_fkwri8",
-    "featured_collection_affgpA"
+    "featured_collection_affgpA",
+    "featured_product_tJUeKT"
   ]
 }
