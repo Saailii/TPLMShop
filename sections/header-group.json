@@ -33,13 +33,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Black Week 15% à 30% du 22 Novembre au 30 Novembre, Rabais automatique",
-            "link": ""
-          }
-        },
         "announcement_QAKebr": {
           "type": "announcement",
           "settings": {
@@ -56,7 +49,6 @@
         }
       },
       "block_order": [
-        "announcement-bar-0",
         "announcement_QAKebr",
         "announcement_9qGAK4"
       ],
