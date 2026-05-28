@@ -39,18 +39,10 @@
             "text": "Avec Twint ! le délai de livraison est plus rapide !",
             "link": ""
           }
-        },
-        "announcement_9qGAK4": {
-          "type": "announcement",
-          "settings": {
-            "text": "Offre de bienvenue pour les nouveaux clients de 5% !",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement_QAKebr",
-        "announcement_9qGAK4"
+        "announcement_QAKebr"
       ],
       "settings": {
         "auto_rotate": true,
@@ -65,13 +57,6 @@
     "announcement_bar_F9BHHG": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_hFamec": {
-          "type": "announcement",
-          "settings": {
-            "text": "20% sur tous les casques : Code SECURITE20",
-            "link": ""
-          }
-        },
         "announcement_LEH3kH": {
           "type": "announcement",
           "settings": {
@@ -81,7 +66,6 @@
         }
       },
       "block_order": [
-        "announcement_hFamec",
         "announcement_LEH3kH"
       ],
       "name": "t:sections.announcement-bar.presets.name",
