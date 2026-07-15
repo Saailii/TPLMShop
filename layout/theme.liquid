@@ -1,12 +1,12 @@
-{%- comment %}<locksmith:6246>{% endcomment -%}
+{%- comment %}<locksmith:087b>{% endcomment -%}
   {%- include 'locksmith' -%}
-{%- comment %}</locksmith:6246>{% endcomment -%}
+{%- comment %}</locksmith:087b>{% endcomment -%}
 
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
-    <meta name="google-site-verification" content="Ug5xRFwcUIUHIrkfaodogjhkBc9doXhgr6QTLPyV3iM" />    
     {{ locksmith_initializations }}
+    <meta name="google-site-verification" content="Ug5xRFwcUIUHIrkfaodogjhkBc9doXhgr6QTLPyV3iM" />    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -29,10 +29,10 @@
     </title>
 
     {% if page_description %}
-      {%- comment %}<locksmith:2e17>{% endcomment -%}
+      {%- comment %}<locksmith:7e1c>{% endcomment -%}
         {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta name="description" content="{{ page_description | escape }}">{% endif -%}
         {%- comment %}original: <meta name="description" content="{{ page_description | escape }}">{%- endcomment %}
-      {%- comment %}</locksmith:2e17>{% endcomment -%}
+      {%- comment %}</locksmith:7e1c>{% endcomment -%}
     {% endif %}
 
     {% render 'meta-tags' %}
