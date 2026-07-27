@@ -15,9 +15,10 @@
       "settings": {
         "heading": "Vidéo",
         "heading_size": "h1",
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "video": "shopify://files/videos/video_editor_202607261155 (2).mp4",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/f4cc13e2-85bf-417d-84b2-32b7c0083519.jpg",
         "description": "",
         "full_width": false,
         "color_scheme": "",
