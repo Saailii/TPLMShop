@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "1785582195064e4a89": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -297,6 +301,7 @@
     }
   },
   "order": [
+    "1785582195064e4a89",
     "image_banner",
     "featured_product_tJUeKT",
     "featured_collection",
