@@ -12,6 +12,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "selleasy_lb_upsell_widget_ba_GqkH3U": {
+          "type": "shopify://apps/selleasy/blocks/lb-upsell-widget-ba/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -53,6 +57,7 @@
         }
       },
       "block_order": [
+        "selleasy_lb_upsell_widget_ba_GqkH3U",
         "vendor",
         "title",
         "price",
@@ -82,6 +87,14 @@
       "name": "More product info",
       "settings": {}
     },
+    "product-metafields": {
+      "type": "product-metafields",
+      "settings": {}
+    },
+    "judgeme-widget": {
+      "type": "judgeme-widget",
+      "settings": {}
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -99,12 +112,6 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "product-metafields": {
-      "type": "product-metafields"
-    },
-    "judgeme-widget": {
-      "type": "judgeme-widget"
     }
   },
   "order": [
@@ -113,6 +120,5 @@
     "product-metafields",
     "judgeme-widget",
     "related-products"
-    
   ]
 }
