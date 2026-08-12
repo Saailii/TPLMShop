@@ -11,6 +11,21 @@
   "sections": {
     "1785582195064e4a89": {
       "type": "_blocks",
+      "blocks": {
+        "tplm_recherche_compatibilite_fitment_search_97QgQz": {
+          "type": "shopify://apps/tplm-recherche-compatibilite/blocks/fitment-search/019ff6cd-3b25-7d83-8c1f-e98b04e1772f",
+          "settings": {
+            "eyebrow": "Trouvez la bonne pièce",
+            "heading": "Compatible avec votre trottinette",
+            "description": "Sélectionnez votre modèle ou décrivez simplement ce qu’il vous faut.",
+            "accent_color": "#f26a21",
+            "background_color": "#f7f7f4"
+          }
+        }
+      },
+      "block_order": [
+        "tplm_recherche_compatibilite_fitment_search_97QgQz"
+      ],
       "settings": {}
     },
     "image_banner": {
