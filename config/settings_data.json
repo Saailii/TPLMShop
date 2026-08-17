@@ -140,6 +140,21 @@
         "settings": {
           "color_scheme": "scheme-1"
         }
+      },
+      "main-register": {
+        "type": "main-register",
+        "settings": {
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "main-login": {
+        "type": "main-login",
+        "settings": {
+          "enable_shop_login_button": true,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
       }
     },
     "content_for_index": [],
@@ -188,6 +203,16 @@
           "storefrontAccessToken": "",
           "scriptInitMode": "immediate"
         }
+      },
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
+      },
+      "2200952712151285029": {
+        "type": "shopify://apps/microsoft-clarity/blocks/brandAgents_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
