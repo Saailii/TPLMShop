@@ -36,7 +36,7 @@
         "announcement_QAKebr": {
           "type": "announcement",
           "settings": {
-            "text": "Do you want to order accessories for the USA from tplmshop? Contact us via WhatsApp we can deliver most of our accessories.Livraison en Suisse • Paiement sécurisé avec TWINT • Atelier et service après-vente local",
+            "text": "Livraison en Suisse • Paiement sécurisé avec TWINT • Atelier et service après-vente local",
             "link": ""
           }
         }
@@ -60,7 +60,7 @@
         "announcement_LEH3kH": {
           "type": "announcement",
           "settings": {
-            "text": "Bienvenue dans notre boutique tplmshop !Bienvenue chez TPLM — mobilité électrique, pièces compatibles et service local en Suisse",
+            "text": "Bienvenue chez TPLM — mobilité électrique, pièces compatibles et service local en Suisse",
             "link": ""
           }
         }
