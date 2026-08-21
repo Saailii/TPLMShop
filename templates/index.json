@@ -151,7 +151,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "trottinette-electrique",
+        "collection": "selection-trottinettes-electriques",
         "products_to_show": 6,
         "title": "Trottinettes électriques",
         "heading_size": "h2",
