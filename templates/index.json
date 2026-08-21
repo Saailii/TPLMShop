@@ -313,6 +313,150 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_fBngC4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_7gPXRK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Trottinettes électriques : choisir, équiper et rouler",
+            "heading_size": "h1"
+          }
+        },
+        "text_LzPgJk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Découvrez nos modèles, nos conseils et les équipements adaptés à vos trajets. Nous vous accompagnons avant et après votre achat en Suisse.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_UbgbYc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Voir les trottinettes",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7gPXRK",
+        "text_LzPgJk",
+        "button_UbgbYc"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/01-trottinettes-showroom.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_cDj8Vg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BLVTMe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Un atelier spécialisé près de chez vous",
+            "heading_size": "h1"
+          }
+        },
+        "text_webRUE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Diagnostic, entretien, montage de pièces et réparations de trottinettes électriques par notre équipe spécialisée.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Y9qaPe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Découvrir notre atelier",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BLVTMe",
+        "text_webRUE",
+        "button_Y9qaPe"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/02-atelier-reparation.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_HkGEEY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DMwkqK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pièces, consommables et accessoires compatibles",
+            "heading_size": "h1"
+          }
+        },
+        "text_tFCbxh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pneus, chambres à air, freins, chargeurs, éclairage et équipements : trouvez rapidement la bonne référence pour votre trottinette.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_AcDVdc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Voir les accessoires",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_DMwkqK",
+        "text_tFCbxh",
+        "button_AcDVdc"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/03-accessoires-consommables.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -324,6 +468,9 @@
     "image_banner_JWxKTL",
     "featured_collection_fkwri8",
     "featured_collection_affgpA",
-    "video_GCqzaF"
+    "video_GCqzaF",
+    "image_with_text_fBngC4",
+    "image_with_text_cDj8Vg",
+    "image_with_text_HkGEEY"
   ]
 }
