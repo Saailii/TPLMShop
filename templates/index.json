@@ -431,7 +431,7 @@
           "type": "button",
           "settings": {
             "button_label": "Voir les accessoires",
-            "button_link": "",
+            "button_link": "https://tplmshop.com/collections/accessoires",
             "button_style_secondary": false
           }
         }
