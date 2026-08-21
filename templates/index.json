@@ -34,14 +34,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Tout pour la mobilité douce",
+            "heading": "Spécialiste de la trottinette électrique en Suisse",
             "heading_size": "h1"
           }
         },
         "text_nWGVeV": {
           "type": "text",
           "settings": {
-            "text": "<strong>10% de remise </strong>immédiate<strong> sur tout le site!!</strong>",
+            "text": "Trottinettes électriques, pièces compatibles, consommables et réparations dans notre atelier spécialisé.",
             "text_style": "body"
           }
         },
@@ -64,12 +64,12 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/Velo_et_trottinette_electriques_en_ville.png",
+        "image": "shopify://shop_images/00-banniere-accueil-tplm.jpg",
         "image_overlay_opacity": 50,
-        "image_height": "medium",
+        "image_height": "large",
         "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
         "show_text_box": false,
         "color_scheme": "scheme-4",
         "stack_images_on_mobile": false,
