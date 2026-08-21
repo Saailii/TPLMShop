@@ -153,7 +153,7 @@
       "settings": {
         "collection": "trottinette-electrique",
         "products_to_show": 6,
-        "title": "",
+        "title": "Trottinettes électriques",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -246,7 +246,7 @@
       "settings": {
         "collection": "accessoires-pratiques",
         "products_to_show": 4,
-        "title": "",
+        "title": "Vélos électriques urbains",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
