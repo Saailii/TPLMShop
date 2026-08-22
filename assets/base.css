@@ -3733,7 +3733,17 @@ details-disclosure > details {
     text-align: center;
   }
 
+  .collection__title {
+    text-align: center;
+  }
+
   .collection__title .title {
     font-size: clamp(3.2rem, 2.5vw, 4.6rem);
+    text-align: center;
+  }
+
+  .collection .card__information,
+  .collection .card-information {
+    text-align: center;
   }
 }
