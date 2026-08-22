@@ -3723,12 +3723,14 @@ details-disclosure > details {
   .image-with-text .image-with-text__heading {
     font-size: clamp(4.8rem, 3.4vw, 6.4rem);
     line-height: 1.1;
+    text-align: center;
   }
 
   .image-with-text .image-with-text__text {
     max-width: 62rem;
     font-size: 2rem;
     line-height: 1.65;
+    text-align: center;
   }
 
   .collection__title .title {
