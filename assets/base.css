@@ -3705,3 +3705,31 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/* TPLM — mise en page ordinateur plus ample */
+@media screen and (min-width: 1200px) {
+  .page-width {
+    max-width: 168rem;
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+  }
+
+  .image-with-text__content {
+    padding: 7rem 8rem;
+  }
+
+  .image-with-text__heading {
+    font-size: clamp(4rem, 3.1vw, 5.6rem);
+    line-height: 1.1;
+  }
+
+  .image-with-text__text {
+    max-width: 62rem;
+    font-size: 1.8rem;
+    line-height: 1.65;
+  }
+
+  .collection__title .title {
+    font-size: clamp(3.2rem, 2.5vw, 4.6rem);
+  }
+}
