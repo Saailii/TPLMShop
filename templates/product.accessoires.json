@@ -84,6 +84,7 @@
     },
     "more_product_info_QqwM6r": {
       "type": "more-product-info",
+      "disabled": true,
       "name": "More product info",
       "settings": {}
     },
