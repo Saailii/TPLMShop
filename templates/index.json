@@ -80,6 +80,7 @@
     },
     "featured_product_tJUeKT": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "text_bwAKWX": {
           "type": "text",
@@ -457,14 +458,14 @@
     "1785582195064e4a89",
     "image_banner",
     "featured_product_tJUeKT",
+    "image_with_text_fBngC4",
+    "image_with_text_cDj8Vg",
+    "image_with_text_HkGEEY",
     "featured_collection",
     "featured_collection_tJARJf",
     "custom_liquid_k99g9Q",
     "image_banner_JWxKTL",
     "featured_collection_fkwri8",
-    "featured_collection_affgpA",
-    "image_with_text_fBngC4",
-    "image_with_text_cDj8Vg",
-    "image_with_text_HkGEEY"
+    "featured_collection_affgpA"
   ]
 }
