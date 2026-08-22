@@ -205,6 +205,16 @@
         "padding_bottom": 36
       }
     },
+    "custom_liquid_k99g9Q": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<section class=\"tplm-parts-search\" aria-labelledby=\"tplm-parts-title\">\n  <div class=\"tplm-parts-search__inner\">\n    <div class=\"tplm-parts-search__copy\">\n      <h2 id=\"tplm-parts-title\">Trouvez votre pièce de trottinette</h2>\n      <p>Indiquez la marque, le modèle ou la pièce recherchée.</p>\n    </div>\n    <form action=\"{{ routes.search_url }}\" method=\"get\" role=\"search\" class=\"tplm-parts-search__form\">\n      <input type=\"hidden\" name=\"type\" value=\"product\">\n      <input type=\"search\" name=\"q\" placeholder=\"Ex. pneu Xiaomi, plaquettes, chargeur…\" aria-label=\"Rechercher une pièce de trottinette\" required>\n      <button type=\"submit\">Rechercher</button>\n    </form>\n  </div>\n</section>\n<style>\n.tplm-parts-search{padding:32px 20px;background:#f3f3f3}\n.tplm-parts-search__inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:minmax(260px,.8fr) minmax(320px,1.2fr);gap:28px;align-items:center}\n.tplm-parts-search h2{margin:0 0 6px;font-size:clamp(24px,3vw,36px);line-height:1.15}\n.tplm-parts-search p{margin:0;color:#555}\n.tplm-parts-search__form{display:flex;background:#fff;border:2px solid #111;border-radius:10px;overflow:hidden}\n.tplm-parts-search__form input{flex:1;min-width:0;padding:16px 18px;border:0;font:inherit;background:#fff;color:#111}\n.tplm-parts-search__form input:focus{outline:3px solid #f2b705;outline-offset:-3px}\n.tplm-parts-search__form button{border:0;padding:14px 24px;background:#111;color:#fff;font:inherit;font-weight:700;cursor:pointer}\n.tplm-parts-search__form button:hover{background:#333}\n@media(max-width:749px){.tplm-parts-search{padding:24px 16px}.tplm-parts-search__inner{grid-template-columns:1fr;gap:16px}.tplm-parts-search__form{flex-direction:column}.tplm-parts-search__form button{width:100%}}\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_banner_JWxKTL": {
       "type": "image-banner",
       "blocks": {
@@ -294,33 +304,6 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "custom_liquid_k99g9Q": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<section class=\"tplm-parts-search\" aria-labelledby=\"tplm-parts-title\">\n  <div class=\"tplm-parts-search__inner\">\n    <div class=\"tplm-parts-search__copy\">\n      <h2 id=\"tplm-parts-title\">Trouvez votre pièce de trottinette</h2>\n      <p>Indiquez la marque, le modèle ou la pièce recherchée.</p>\n    </div>\n    <form action=\"{{ routes.search_url }}\" method=\"get\" role=\"search\" class=\"tplm-parts-search__form\">\n      <input type=\"hidden\" name=\"type\" value=\"product\">\n      <input type=\"search\" name=\"q\" placeholder=\"Ex. pneu Xiaomi, plaquettes, chargeur…\" aria-label=\"Rechercher une pièce de trottinette\" required>\n      <button type=\"submit\">Rechercher</button>\n    </form>\n  </div>\n</section>\n<style>\n.tplm-parts-search{padding:32px 20px;background:#f3f3f3}\n.tplm-parts-search__inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:minmax(260px,.8fr) minmax(320px,1.2fr);gap:28px;align-items:center}\n.tplm-parts-search h2{margin:0 0 6px;font-size:clamp(24px,3vw,36px);line-height:1.15}\n.tplm-parts-search p{margin:0;color:#555}\n.tplm-parts-search__form{display:flex;background:#fff;border:2px solid #111;border-radius:10px;overflow:hidden}\n.tplm-parts-search__form input{flex:1;min-width:0;padding:16px 18px;border:0;font:inherit;background:#fff;color:#111}\n.tplm-parts-search__form input:focus{outline:3px solid #f2b705;outline-offset:-3px}\n.tplm-parts-search__form button{border:0;padding:14px 24px;background:#111;color:#fff;font:inherit;font-weight:700;cursor:pointer}\n.tplm-parts-search__form button:hover{background:#333}\n@media(max-width:749px){.tplm-parts-search{padding:24px 16px}.tplm-parts-search__inner{grid-template-columns:1fr;gap:16px}.tplm-parts-search__form{flex-direction:column}.tplm-parts-search__form button{width:100%}}\n</style>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "video_GCqzaF": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "Vidéo",
-        "heading_size": "h2",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/video_editor_202607261155 (2).mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify://shop_images/f4cc13e2-85bf-417d-84b2-32b7c0083519.jpg",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -480,7 +463,6 @@
     "image_banner_JWxKTL",
     "featured_collection_fkwri8",
     "featured_collection_affgpA",
-    "video_GCqzaF",
     "image_with_text_fBngC4",
     "image_with_text_cDj8Vg",
     "image_with_text_HkGEEY"
