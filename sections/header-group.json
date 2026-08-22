@@ -57,16 +57,16 @@
     "announcement_bar_F9BHHG": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_LEH3kH": {
+        "announcement_87HznC": {
           "type": "announcement",
           "settings": {
-            "text": "★★★★★ 5,0/5 sur 263 avis Google • Atelier e Service à GenèveTrottinett",
+            "text": "★★★★★ 5,0/5 Google • 263 avis clients",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_LEH3kH"
+        "announcement_87HznC"
       ],
       "name": "t:sections.announcement-bar.presets.name",
       "settings": {
