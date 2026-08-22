@@ -3715,7 +3715,9 @@ details-disclosure > details {
   }
 
   .image-with-text .image-with-text__content {
+    align-items: center;
     padding: clamp(7rem, 6vw, 10rem);
+    text-align: center;
   }
 
   .image-with-text .image-with-text__heading {
