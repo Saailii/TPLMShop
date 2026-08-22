@@ -87,11 +87,6 @@
         "padding_bottom": 12
       }
     },
-    "more_product_info_QqwM6r": {
-      "type": "more-product-info",
-      "name": "More product info",
-      "settings": {}
-    },
     "product-metafields": {
       "type": "product-metafields",
       "settings": {}
@@ -121,7 +116,6 @@
   },
   "order": [
     "main",
-    "more_product_info_QqwM6r",
     "product-metafields",
     "judgeme-widget",
     "related-products"
