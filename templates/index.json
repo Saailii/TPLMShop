@@ -9,6 +9,16 @@
  */
 {
   "sections": {
+    "custom_liquid_AdyBL3": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{% assign prix_boutique = product.metafields.custom.prix_boutique.value %}{% if prix_boutique != blank %}<div class=\"product-price-comparison\" style=\"margin:1rem 0;padding:1rem 0;border-top:1px solid rgba(18,18,18,.12);border-bottom:1px solid rgba(18,18,18,.12)\"><div style=\"display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:baseline\"><span><strong>Prix web :</strong> {{ product.price | money }}</span><span><strong>Prix en boutique :</strong> {{ prix_boutique | money }}</span></div><p style=\"margin:.65rem 0 0;font-size:.875em;line-height:1.5;opacity:.75\">Le prix en boutique inclut le montage, le contrôle technique et la mise en route pour une utilisation immédiate en toute sécurité.</p></div>{% endif %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
     "custom_liquid_jN9DNy": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -485,6 +495,7 @@
     }
   },
   "order": [
+    "custom_liquid_AdyBL3",
     "custom_liquid_jN9DNy",
     "custom_liquid_XY66x4",
     "custom_liquid_Ken9dq",
