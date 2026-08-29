@@ -13,7 +13,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "{% if product.metafields.custom.prix_boutique != blank %}\n  <div style=\"margin-top: 8px;\">\n    <span style=\"font-weight: 600;\">Prix web :</span> {{ product.price | money }} &nbsp;|&nbsp;\n    <span style=\"font-weight: 600;\">Prix boutique :</span> {{ product.metafields.custom.prix_boutique | money }}\n    <p style=\"font-size: 0.85em; color: #666; margin-top: 4px;\">Le prix en boutique inclut le montage, le contrôle technique et la mise en route pour une utilisation immédiate en toute sécurité.</p>\n  </div>\n{% endif %}",
+        "custom_liquid": "{% assign prix_boutique = product.metafields.custom.prix_boutique %}\n{% if prix_boutique != blank %}\n  <div style=\"margin-top: 8px;\">\n    <span style=\"font-weight: 600;\">Prix web :</span> {{ product.price | money }} &nbsp;|&nbsp;\n    <span style=\"font-weight: 600;\">Prix boutique :</span> {{ prix_boutique.value | money }}\n    <p style=\"font-size: 0.85em; color: #666; margin-top: 4px;\">Le prix en boutique inclut le montage, le contrôle technique et la mise en route pour une utilisation immédiate en toute sécurité.</p>\n  </div>\n{% endif %}",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 16
