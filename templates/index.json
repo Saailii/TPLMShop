@@ -9,11 +9,11 @@
  */
 {
   "sections": {
-    "custom_liquid_AdyBL3": {
+    "custom_liquid_HgHhW8": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "{% assign prix_boutique = product.metafields.custom.prix_boutique.value %}{% if prix_boutique != blank %}<div class=\"product-price-comparison\" style=\"margin:1rem 0;padding:1rem 0;border-top:1px solid rgba(18,18,18,.12);border-bottom:1px solid rgba(18,18,18,.12)\"><div style=\"display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:baseline\"><span><strong>Prix web :</strong> {{ product.price | money }}</span><span><strong>Prix en boutique :</strong> {{ prix_boutique | money }}</span></div><p style=\"margin:.65rem 0 0;font-size:.875em;line-height:1.5;opacity:.75\">Le prix en boutique inclut le montage, le contrôle technique et la mise en route pour une utilisation immédiate en toute sécurité.</p></div>{% endif %}",
+        "custom_liquid": "{% if product.metafields.custom.prix_boutique != blank %}\n  <div style=\"margin-top: 8px;\">\n    <span style=\"font-weight: 600;\">Prix web :</span> {{ product.price | money }} &nbsp;|&nbsp;\n    <span style=\"font-weight: 600;\">Prix boutique :</span> {{ product.metafields.custom.prix_boutique | money }}\n    <p style=\"font-size: 0.85em; color: #666; margin-top: 4px;\">Le prix en boutique inclut le montage, le contrôle technique et la mise en route pour une utilisation immédiate en toute sécurité.</p>\n  </div>\n{% endif %}",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 16
@@ -24,16 +24,6 @@
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "{% assign prix_boutique = product.metafields.custom.prix_boutique %}{% if prix_boutique != blank %}<div style=\"margin:1rem 0 0; padding:1rem 0; border-top:1px solid rgba(18,18,18,.12); border-bottom:1px solid rgba(18,18,18,.12);\"><div style=\"display:flex; flex-wrap:wrap; gap:.75rem 1.5rem; align-items:baseline; font-size:1.05em;\"><span><strong>Prix web :</strong> {{ product.price | money }}</span><span><strong>Prix en boutique :</strong> {{ prix_boutique.value | money }}</span></div><p style=\"margin:.65rem 0 0; font-size:.875em; line-height:1.5; opacity:.75;\">Le prix en boutique inclut le montage, le contrôle technique et la mise en route pour une utilisation immédiate en toute sécurité.</p></div>{% endif %}",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 16
-      }
-    },
-    "custom_liquid_XY66x4": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "{% assign prix_boutique = product.metafields.custom.prix_boutique %}{% if prix_boutique != blank %}<div style=\"display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;line-height:1.4;\"><span>En ligne : {{ product.price | money }}</span><span aria-hidden=\"true\">|</span><span>En boutique : {{ prix_boutique.value | money }}</span></div>{% endif %}",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 16
@@ -495,9 +485,8 @@
     }
   },
   "order": [
-    "custom_liquid_AdyBL3",
+    "custom_liquid_HgHhW8",
     "custom_liquid_jN9DNy",
-    "custom_liquid_XY66x4",
     "custom_liquid_Ken9dq",
     "1785582195064e4a89",
     "image_banner",
