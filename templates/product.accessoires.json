@@ -9,6 +9,26 @@
  */
 {
   "sections": {
+    "custom_liquid_9nR6Wp": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{% assign prix_boutique = product.metafields.custom.prix_boutique %}\n{% if prix_boutique != blank %}\n  <div style=\"margin-top: 8px;\">\n    <span style=\"font-weight: 600;\">Prix web :</span> {{ product.price | money }} &nbsp;|&nbsp;\n    <span style=\"font-weight: 600;\">Prix boutique :</span> {{ prix_boutique.value | money }}\n    <p style=\"font-size: 0.85em; color: #666; margin-top: 4px;\">Le prix en boutique inclut le montage, le contrôle technique et la mise en route pour une utilisation immédiate en toute sécurité.</p>\n  </div>\n{% endif %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "custom_liquid_yVLJfp": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{% assign prix_boutique = product.metafields.custom.prix_boutique %}\n{% if prix_boutique != blank %}\n  <div style=\"margin-top: 8px;\">\n    <span style=\"font-weight: 600;\">Prix web :</span> {{ product.price | money }} &nbsp;|&nbsp;\n    <span style=\"font-weight: 600;\">Prix boutique :</span> {{ prix_boutique.value | money }}\n    <p style=\"font-size: 0.85em; color: #666; margin-top: 4px;\">Le prix en boutique inclut le montage, le contrôle technique et la mise en route pour une utilisation immédiate en toute sécurité.</p>\n  </div>\n{% endif %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -26,6 +46,12 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "custom_liquid_Jh7LwR": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -60,6 +86,7 @@
         "vendor",
         "title",
         "price",
+        "custom_liquid_Jh7LwR",
         "variant_picker",
         "description_FfqtgL",
         "icon_information_4Jhw4P",
@@ -117,6 +144,8 @@
     }
   },
   "order": [
+    "custom_liquid_9nR6Wp",
+    "custom_liquid_yVLJfp",
     "main",
     "more_product_info_QqwM6r",
     "product-metafields",
