@@ -9,16 +9,6 @@
  */
 {
   "sections": {
-    "custom_liquid_HgHhW8": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<div style=\"background:#f0f0f0; padding:10px; margin:10px 0; font-size:12px;\">\n  DEBUG Prix boutique:<br>\n  Valeur brute: {{ product.metafields.custom.prix_boutique }}<br>\n  Valeur .value: {{ product.metafields.custom.prix_boutique.value }}<br>\n  Type: {{ product.metafields.custom.prix_boutique.type }}<br>\n  Tous les metafields custom: {{ product.metafields.custom }}\n</div>",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 16
-      }
-    },
     "custom_liquid_jN9DNy": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -485,7 +475,7 @@
     }
   },
   "order": [
-    "custom_liquid_HgHhW8",
+    
     "custom_liquid_jN9DNy",
     "custom_liquid_Ken9dq",
     "1785582195064e4a89",
