@@ -46,6 +46,12 @@
             "swatch_shape": "square"
           }
         },
+        "custom_liquid_BGUnN7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign tplm_variant = product.selected_or_first_available_variant %}\n{% assign tplm_local_stock = false %}\n{% for tplm_availability in tplm_variant.store_availabilities %}\n  {% if tplm_availability.location.id == 124852699475 and tplm_availability.available %}\n    {% assign tplm_local_stock = true %}\n  {% endif %}\n{% endfor %}\n<div class=\"tplm-delivery-info\" style=\"border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin:16px 0;background:#fafafa;line-height:1.5\">\n  <strong style=\"display:block;margin-bottom:10px\">Livraison et retrait</strong>\n  {% if tplm_local_stock %}\n    <p style=\"margin:0 0 8px\"><strong>En stock à Genève :</strong> livraison en Suisse sous 24 à 72 h.</p>\n    <p style=\"margin:0 0 8px\"><strong>Retrait en magasin :</strong> dès le lendemain si la commande est passée avant 15 h, après confirmation de disponibilité.</p>\n  {% elsif tplm_variant.available %}\n    <p style=\"margin:0 0 8px\"><strong>Sur commande :</strong> livraison estimée sous 5 à 7 jours après traitement. La date sera confirmée par notre support selon la disponibilité.</p>\n    <p style=\"margin:0 0 8px\"><strong>Retrait en magasin :</strong> date à confirmer avec notre support.</p>\n  {% else %}\n    <p style=\"margin:0 0 8px\"><strong>Indisponible :</strong> contactez notre support pour connaître la prochaine date de livraison ou de retrait.</p>\n  {% endif %}\n  <p style=\"margin:0;font-size:.9em;color:#555\">Trottinette Service Genève · Ruelle des Templiers 4, 1207 Genève. Choix du retrait au paiement, selon la variante et le stock disponibles.</p>\n</div>"
+          }
+        },
         "icon_information_4Jhw4P": {
           "type": "icon_information",
           "settings": {}
@@ -72,6 +78,7 @@
         "title",
         "price",
         "variant_picker",
+        "custom_liquid_BGUnN7",
         "icon_information_4Jhw4P",
         "buy_buttons",
         "share"
