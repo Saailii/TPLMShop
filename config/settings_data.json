@@ -213,6 +213,11 @@
         "type": "shopify://apps/microsoft-clarity/blocks/brandAgents_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
         "settings": {}
+      },
+      "1855534799094955768": {
+        "type": "shopify://apps/shop-reviews/blocks/app_embedSR/e22d3b04-b797-4367-b9fd-bcdc30e92713",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
