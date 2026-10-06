@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -16,10 +25,54 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_VPAyi4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_byy49y": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choisissez le bon contact",
+            "heading_size": "h1"
+          }
+        },
+        "text_YcTNCd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pour les commandes, les produits, les livraisons et le service client :<br/>+41 79 956 16 78<br/><br/>Pour l’atelier, les diagnostics et les réparations :<br/>+41 77 527 90 71 (appel et WhatsApp)<br/><br/>Atelier : Ruelle des Templiers 4, 1207 Genève</p>"
+          }
+        },
+        "button_KNeKpJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Appeler le service client",
+            "button_link": "tel:+41799561678",
+            "button_style_secondary": false,
+            "button_label_2": "WhatsApp atelier",
+            "button_link_2": "https://wa.me/41775279071",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_byy49y",
+        "text_YcTNCd",
+        "button_KNeKpJ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "rich_text_VPAyi4"
   ]
 }
