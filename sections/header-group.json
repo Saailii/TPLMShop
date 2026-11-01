@@ -57,6 +57,13 @@
     "announcement_bar_F9BHHG": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_piDAXN": {
+          "type": "announcement",
+          "settings": {
+            "text": "🎁 Bientôt : gagnez une PUNK Roamer Pro dès que nos deux comptes atteignent 7 000 abonnés — Voir le règlement",
+            "link": "https://tplmshop.com/pages/reglement-du-jeu-concours-punk-roamer-pro"
+          }
+        },
         "announcement_87HznC": {
           "type": "announcement",
           "settings": {
@@ -66,6 +73,7 @@
         }
       },
       "block_order": [
+        "announcement_piDAXN",
         "announcement_87HznC"
       ],
       "name": "t:sections.announcement-bar.presets.name",
