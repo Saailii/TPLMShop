@@ -238,7 +238,7 @@
           "type": "button",
           "settings": {
             "button_label": "Découvrir notre atelier",
-            "button_link": "https://tplmshop.com/pages/contact",
+            "button_link": "https://tplmshop.com/pages/atelier",
             "button_style_secondary": false
           }
         }
